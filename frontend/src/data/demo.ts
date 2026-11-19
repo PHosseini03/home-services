@@ -78,9 +78,9 @@ export const DEMO_AREAS: Area[] = [
 ];
 
 export const CONTACT = {
-  phone: "+49 89 4521 7790",
-  tel: "+498945217790",
+  phone: "Ihre Telefonnummer hier",
+  tel: "",
   email: "hilfe@profix.example",
-  address: "Gewerbering 12, 81829 München",
+  address: "Ihre Adresse hier",
   hours: "Mo–Sa 7–20 Uhr · Notdienst rund um die Uhr",
 };

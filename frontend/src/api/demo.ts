@@ -2,6 +2,8 @@
 // Mirrors the success payloads of backend/app/routers so forms show their real confirmation.
 // Nothing is sent or stored anywhere.
 
+import { estimatePrice, type EstimateInput } from "../lib/pricing";
+
 type Payload = Readonly<Record<string, unknown>>;
 type Handler = (p: Payload) => unknown;
 
@@ -40,6 +42,8 @@ const HANDLERS: Readonly<Record<string, Handler>> = {
       message: `Vielen Dank, ${text(p, "name")}! Ihr Termin für ${service} ist am ${germanDate(text(p, "date"))} (${slot}) gebucht.`,
     };
   },
+  // Same formula as the backend, so the estimator gets a full result instead of a confirmation message.
+  "/api/estimate": (p) => estimatePrice(p as unknown as EstimateInput),
 };
 
 const FALLBACK_MESSAGE = "Vielen Dank! Ihre Anfrage ist eingegangen.";

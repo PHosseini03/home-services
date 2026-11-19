@@ -4,7 +4,7 @@
 
 A bold, navy-and-safety-orange website for a home services company (plumbing, house cleaning, electrical, HVAC, handyman). React + TypeScript frontend and a FastAPI backend.
 
-**Language:** the whole site is in German (formal "Sie"), with euro prices, German date formats, +49 phone numbers and Munich-area postcodes. API error messages are German too.
+**Language:** the whole site is in German (formal "Sie"), with euro prices, German date formats, placeholder phone number and address. API error messages are German too.
 
 ![Desktop](screenshots/hero.png)
 

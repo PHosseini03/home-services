@@ -157,11 +157,11 @@ export default function Book() {
                   </div>
                 </fieldset>
                 <TextField label="Vollständiger Name" name="name" autoComplete="name" value={values.name} onChange={set("name")} error={errors.name} maxLength={80} placeholder="Jonas Becker" />
-                <TextField label="Telefon" name="phone" type="tel" autoComplete="tel" value={values.phone} onChange={set("phone")} error={errors.phone} maxLength={20} placeholder="+49 89 1234 5678" />
-                <TextField label="E-Mail" name="email" type="email" autoComplete="email" value={values.email} onChange={set("email")} error={errors.email} maxLength={120} placeholder="sie@beispiel.de" />
+                <TextField label="Telefon" name="phone" type="tel" autoComplete="tel" value={values.phone} onChange={set("phone")} error={errors.phone} maxLength={20} placeholder="Ihre Telefonnummer" />
+                <TextField label="E-Mail" name="email" type="email" autoComplete="email" value={values.email} onChange={set("email")} error={errors.email} maxLength={120} placeholder="ihre@email.example" />
                 <TextField label="Postleitzahl" name="zip" inputMode="numeric" autoComplete="postal-code" maxLength={5} value={values.zip} onChange={set("zip")} error={errors.zip} placeholder="80331" hint="Probieren Sie 80331, 85737 oder 82131" />
                 <div className="sm:col-span-2">
-                  <TextField label="Straße und Hausnummer" name="address" autoComplete="street-address" value={values.address} onChange={set("address")} error={errors.address} maxLength={160} placeholder="Ahornstraße 88, München" />
+                  <TextField label="Straße und Hausnummer" name="address" autoComplete="street-address" value={values.address} onChange={set("address")} error={errors.address} maxLength={160} placeholder="Straße, Hausnummer, Ort" />
                 </div>
                 <div className="sm:col-span-2">
                   <TextArea label="Worum geht es? (optional)" name="notes" value={values.notes} onChange={set("notes")} error={errors.notes} maxLength={1000} placeholder="Die Küchenspüle tropft unter dem Unterschrank …" />
